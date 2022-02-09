@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Create Account</title>
+  </head>
+  <body>
+    <form class="form" action="#" method="post">
+      <h1>Create Account</h1>
+      <p>Create a free salmanwap account to access all articles and videos.</p>
+
+      <section>
+        <label class="label-email" for="email">Email</label>
+        <input
+          class="input-email"
+          id="email"
+          type="email"
+          name="email"
+          autocomplete="username"
+          required
+        />
+      </section>
+
+      <section>
+        <label class="label-password" for="password">Password</label>
+        <button
+          class="toggle-password"
+          type="button"
+          aria-label="Show password"
+        >
+          Show password
+        </button>
+        <input
+          class="input-password"
+          id="password"
+          type="password"
+          name="password"
+          autocomplete="new-password"
+          aria-describedby="password-constraints"
+          minlength="8"
+          required
+        />
+        <small id="password-constraints"
+          >At least eight characters, with at least one lowercase and one
+          uppercase letter.</small
+        >
+      </section>
+
+      <button class="button-sign-in" type="submit">
+        Create a free account
+      </button>
+    </form>
+
+    <script src="main.js"></script>
+  </body>
+</html>
